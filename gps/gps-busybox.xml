@@ -1,0 +1,158 @@
+<TaskerData sr="" dvi="1" tv="4.4u3m">
+	<Profile sr="prof42" ve="2">
+		<cdate>1410843504309</cdate>
+		<clp>true</clp>
+		<edate>1410876115168</edate>
+		<id>42</id>
+		<mid0>43</mid0>
+		<nme>Waze - Loop</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.waze.FreeMapAppActivity</cls0>
+			<flags>2</flags>
+			<label0>Waze</label0>
+			<pkg0>com.waze</pkg0>
+		</App>
+	</Profile>
+	<Profile sr="prof44" ve="2">
+		<cdate>1410843794638</cdate>
+		<clp>true</clp>
+		<edate>1410844116043</edate>
+		<id>44</id>
+		<mid0>45</mid0>
+		<mid1>45</mid1>
+		<nme>Waze - GPS</nme>
+		<State sr="con0" ve="2">
+			<code>165</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%V_waze</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1410843081718</cdate>
+		<name>GPS</name>
+		<pids>44,42</pids>
+		<tids>41,45,43</tids>
+	</Project>
+	<Task sr="task41">
+		<cdate>1410843153780</cdate>
+		<edate>1410844849907</edate>
+		<id>41</id>
+		<nme>check-waze</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="6">
+			<code>11820</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>pgrep_waze</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.BOOLEAN_VALUE>true</com.intangibleobject.securesettings.plugin.extra.BOOLEAN_VALUE>
+					<com.intangibleobject.securesettings.plugin.extra.BOOLEAN_VALUE-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.BOOLEAN_VALUE-type>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_OUTPUT>false</com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_OUTPUT>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_OUTPUT-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_OUTPUT-type>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_TOAST>false</com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_TOAST>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_TOAST-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.CMD_DISPLAY_TOAST-type>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_EXITVALUE>%V_waze</com.intangibleobject.securesettings.plugin.extra.CMD_EXITVALUE>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_EXITVALUE-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.CMD_EXITVALUE-type>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_NAME>pgrep_waze</com.intangibleobject.securesettings.plugin.extra.CMD_NAME>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_NAME-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.CMD_NAME-type>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_REPLACE_VARS>false</com.intangibleobject.securesettings.plugin.extra.CMD_REPLACE_VARS>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_REPLACE_VARS-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.CMD_REPLACE_VARS-type>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_TO_RUN>pgrep waze</com.intangibleobject.securesettings.plugin.extra.CMD_TO_RUN>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_TO_RUN-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.CMD_TO_RUN-type>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_USES_ROOT>false</com.intangibleobject.securesettings.plugin.extra.CMD_USES_ROOT>
+					<com.intangibleobject.securesettings.plugin.extra.CMD_USES_ROOT-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.CMD_USES_ROOT-type>
+					<com.intangibleobject.securesettings.plugin.extra.KEEP_DEVICE_AWAKE>false</com.intangibleobject.securesettings.plugin.extra.KEEP_DEVICE_AWAKE>
+					<com.intangibleobject.securesettings.plugin.extra.KEEP_DEVICE_AWAKE-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.KEEP_DEVICE_AWAKE-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>run_cmd</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>pgrep_waze</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">Secure Settings</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task43">
+		<cdate>1410843516508</cdate>
+		<edate>1410876115168</edate>
+		<id>43</id>
+		<pri>10</pri>
+		<Action sr="act0" ve="6">
+			<code>130</code>
+			<label>check-waze</label>
+			<Str sr="arg0" ve="3">check-waze</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="6">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2">
+				<var>%V_wait</var>
+			</Int>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%V_waze</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="6">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">check-waze</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%V_waze</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task45">
+		<cdate>1410843859050</cdate>
+		<edate>1410843888747</edate>
+		<id>45</id>
+		<nme>toggle-gps</nme>
+		<Action sr="act0" ve="6">
+			<code>11820</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>GPS Toggle</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>gps</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.intangibleobject.securesettings.plugin.extra.TOGGLE>true</com.intangibleobject.securesettings.plugin.extra.TOGGLE>
+					<com.intangibleobject.securesettings.plugin.extra.TOGGLE-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.TOGGLE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>GPS Toggle</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">Secure Settings</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
